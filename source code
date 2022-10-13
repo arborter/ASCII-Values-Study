@@ -1,0 +1,16 @@
+#include <cs50.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main(void)
+{
+    string z = get_string("Input: ");
+    int iteration = 1;
+    for (int y = 0; y < strlen(z);)
+    {
+        printf("Char %i: %i\n", iteration, z[y]);
+        iteration++;
+        y++;
+    }
+}
